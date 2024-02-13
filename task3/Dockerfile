@@ -17,4 +17,4 @@ COPY ./src .
 EXPOSE 3032
 
 # Изменяем команду запуска, чтобы в контейнере запускался файл main.js (в этом поможет команда node)
-CMD ["node", "main.js"]
+ENTRYPOINT ["node", "main.js"]
